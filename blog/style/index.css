@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* .inner #serach {
+    padding: 8px;
+    width: 250px;
+
+} */
+
+.all {
+    width: 1170px;
+    margin: 100px auto auto auto;
+    padding: 0 15px;
+}
+
+.slide-content li>img {
+    width: 100%;
+    height: 400px;
+}
+
+.slide {
+    height: 400px;
+}
+
+.slide-content {
+    position: relative;
+}
+
+.slide-content li {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    transition: .25s ease-in-out all;
+}
+
+.slide-content .active {
+    opacity: 1;
+}
+
+.tips ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tips ul li {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    top: 360px;
+    margin: 0 20px;
+}
+
+.tips ul .tipsed {
+    background-color: #2962ff;
+}
+
+.slide .btn {
+    position: relative;
+    top: 155px;
+}
+
+.slide .btn button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #333;
+    left: 20px;
+    outline: none;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slide .btn button:hover {
+    color: #2962ff;
+}
+
+.slide .btn .rightbtn {
+    left: 1080px;
+}
+
+.study {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.study .item {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    float: left;
+    display: flex;
+    margin: 0 15px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.14);
+}
+
+.study .view {
+    width: 2800px;
+    position: relative;
+    transition: .3s ease-in-out all;
+}
+
+
+/* .study .item:not(:first-child) {
+    margin-left: 30px;
+} */
+
+.study .study-img {
+    width: 40%;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.study .study-img span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgba(197, 197, 197, 0.596);
+    top: 0;
+    left: 0;
+    transform: skew(-45deg) scaleX(0);
+    transition: .3s all ease-in-out;
+}
+
+.item:hover .study-img span {
+    transform: skew(-45deg) scaleX(1.3);
+}
+
+.study .study-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    display: flex;
+}
+
+.item a:hover {
+    text-decoration: none;
+}
+
+.item a {
+    display: block;
+    color: #000;
+    padding: 8px;
+    width: 60%;
+    line-height: 24px;
+}
+
+.item a h3 {
+    color: #2962ff;
+    display: inline;
+    font-size: 16px;
+}
+
+.item a p {
+    line-height: 14px;
+    color: #333;
+    margin: 14px 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.item a span {
+    float: right;
+    margin-right: 5px;
+}
+
+.studybtn {
+    position: relative;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.studybtn button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #333;
+    box-shadow: 0 0 5px #666;
+    outline: none;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+}
+
+.studyleftbtn {
+    left: -30px;
+}
+
+.studyrightbtn {
+    right: 0px;
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.blogs {
+    width: 750px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px #666;
+    margin-bottom: 30px;
+}
+
+.content .allblogs>h4 {
+    font-weight: 700;
+}
+
+.img {
+    height: 120px;
+    width: 230px;
+    float: left;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    transition: .2s ease-in-out all;
+}
+
+.img img:hover {
+    transform: scale(1.08);
+}
+
+.blogcontent {
+    padding-left: 20px;
+    float: right;
+    width: 460px;
+}
+
+.blogcontent a {
+    color: #000;
+}
+
+.blogcontent a>h4 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* .showblog {
+    padding-top: 15px;
+} */
+
+.blogcontent .showblog {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #566573;
+    text-indent: 24px;
+    overflow: hidden;
+    margin: 10px 0;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+}
+
+.blogsfoot {
+    float: right;
+    width: 460px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.blogsfoot ul li {
+    display: flex;
+    font-size: 12px;
+    margin-right: 7px;
+    letter-spacing: .2px;
+    position: relative;
+    color: #748594;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.blogsfoot ul li a {
+    color: #748594;
+}
+
+.blogsfoot .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top: -3px;
+    margin-right: 2px;
+}
+
+.blogs-item {
+    position: relative;
+    top: 50px;
+    transform: translateY(-1px);
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+
+.blogs-item:hover::before {
+    content: '';
+    height: 200px;
+    width: 6px;
+    background-color: #2962ff;
+    position: absolute;
+    left: 0px;
+    top: -0px;
+    border-radius: 5px 0 0 5px;
+}
+
+.blogsfoot .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    width: 750px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    top: 40px;
+    position: absolute;
+    box-shadow: 0 0 5px #666;
+    background-color: #fff;
+}
+
+.loading>h4 {
+    font-weight: bold;
+}
+
+.introduce {
+    width: 360px;
+    margin-left: 30px;
+    margin-top: 40px;
+    position: absolute;
+    border-radius: 5px;
+    right: 0;
+}
+
+.introduce-item {
+    position: relative;
+    top: 50px;
+    transform: translateY(-1px);
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+
+.me {
+    box-shadow: 0 0 5px #666;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.me .me-view {
+    width: 1140px;
+    display: flex;
+    transition: .3s ease-in-out all;
+}
+
+.me .me-head {
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.me .me-head h4,
+.me .me-content h4 {
+    font-weight: 600;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.me .me-show {
+    width: 360px;
+    overflow: hidden;
+}
+
+.me .me-content {
+    height: 310px;
+    padding: 15px;
+    width: 360px;
+}
+
+.me .me-content .itemicon {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.me .me-content .itemicon img {
+    width: 100%;
+    height: 100%;
+}
+
+.me .me-content .mefoot {
+    text-align: center;
+    line-height: 30px;
+}
+
+.me .me-content .mefoot span {
+    font-weight: 600;
+}
+
+.me-tips ul {
+    display: flex;
+    justify-content: center;
+}
+
+.me-tips ul li {
+    width: 10px;
+    margin: 0 10px 20px 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc;
+    transition: .3s ease-in-out all;
+}
+
+.me-tips ul .show {
+    background-color: #2962ff;
+}
+
+.ranking {
+    width: 360px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #666;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.ranking-head {
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.ranking h4 {
+    font-weight: 600;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.ranking .ranking-content {
+    padding: 5px 15px;
+}
+
+.ranking .ranking-content ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.ranking .ranking-content ul li a {
+    text-decoration: none;
+    color: #666;
+    line-height: 50px;
+    display: flex;
+}
+
+.ranking .ranking-content ul li a:hover {
+    color: #333;
+    font-weight: bold;
+}
+
+.ranking .ranking-content ul li a span {
+    padding-left: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ranking .ranking-content ul li a .ranking-num {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(102, 98, 98, 0.5);
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    transform: translateY(30%);
+}
+
+.ranking .ranking-content ul li a .num-one {
+    background-color: rgba(247, 18, 18, 0.5);
+}
+
+.ranking .ranking-content ul li a .num-two {
+    background-color: rgba(29, 112, 236, 0.5);
+}
+
+.ranking .ranking-content ul li a .num-three {
+    background-color: rgba(72, 231, 40, 0.5);
+}
+
+.fixed {
+    position: fixed;
+    top: 112px;
+}
+
+.backtop {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 16px;
+    position: fixed;
+    background-color: #fff;
+    top: 80%;
+    right: 10%;
+    font-weight: bold;
+    cursor: pointer;
+}
